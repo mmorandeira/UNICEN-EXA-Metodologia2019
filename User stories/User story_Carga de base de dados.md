@@ -8,8 +8,3 @@ Como administrador quiero modificar el contenido de la base de datos para que lo
 - Que los datos sean consistentes.
 - Que las consultas a la base de datos no devuelvan mas información de la necesaria.
 -  Que no tenga información repetida o redundante.
-
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDUxMTgzNV19
--->
