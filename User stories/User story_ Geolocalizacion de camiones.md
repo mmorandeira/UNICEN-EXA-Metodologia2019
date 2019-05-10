@@ -1,4 +1,4 @@
-# User Story Specification: <Geolocalizacion de Camiones\>
+# User Story Specification: Geolocalizacion de Camiones
 
 ## 1.	Description
 Como administrador quiero ver la ubicación de los camiones itinerantes para ver que estén cumpliendo su crono grama y notificar a un chófer si en caso contrario.
@@ -7,6 +7,3 @@ Como administrador quiero ver la ubicación de los camiones itinerantes para ver
 - Se muestre en un mapa la ubicación de los camiones activos con sus respectivos puntos itinerantes que debe recorrer. 
 - Que se pueda filtrar por chófer. 
 - Que se envíe la notificación al chófer.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MzE1NzI2OV19
--->
