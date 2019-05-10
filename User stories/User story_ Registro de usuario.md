@@ -1,4 +1,4 @@
-# User Story Specification: <Registro de Usuario\>
+# User Story Specification: Registro de usuario
 
 ## 1.	Description
 Como vecino quiero poder registrarme para comenzar a reciclar en el programa.
@@ -8,6 +8,3 @@ Como vecino quiero poder registrarme para comenzar a reciclar en el programa.
 - Se cumplan los campos obligatorios del registro. 
 - El usuario queda registrado en la base de datos. 
 - Se envíe un mail de confirmación.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNDE2ODYxMl19
--->
