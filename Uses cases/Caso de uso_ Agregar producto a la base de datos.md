@@ -6,19 +6,19 @@
 ### 1. Brief description
 El caso de uso permite a un administrador agregar un producto en la base de datos. Actor primario: administrador municipal.
 ### 2. Basic flow of events
-1.  El caso de uso comienza cuando un administrador quiere agregar un producto a la base de datos.
+	1.  El caso de uso comienza cuando un administrador quiere agregar un producto a la base de datos.
     
-2.  [Punto de extension] PTO2 el administrador se acaba de ingresar.
+	2.  [Punto de extension] PTO2 el administrador se acaba de ingresar.
     
-3.  El sistema solicita la información del producto (nombre, código de barra, tipo de material, volumen, etc.).
+	3.  El sistema solicita la información del producto (nombre, código de barra, tipo de material, volumen, etc.).
     
-4.  El administrador ingresa los datos.
+	4.  El administrador ingresa los datos.
     
-5.  <include> Verificar producto.
+	5.  <include> Verificar producto.
     
-6.  Si el producto no existe en la base de datos, se agrega.
+	6.  Si el producto no existe en la base de datos, se agrega.
     
-7.  El caso de uso termina.
+	7.  El caso de uso termina.
 
 ### 3. Alternative flow
 #### 3.1 Dato incorrecto
