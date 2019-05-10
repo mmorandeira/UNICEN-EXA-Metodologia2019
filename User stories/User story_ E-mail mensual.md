@@ -1,5 +1,5 @@
 
-# User Story Specification: <E-mail mensual\>
+# User Story Specification: E-mail mensual
 
 ## 1.	Description
 Se enviara un mal a principio de mes al subsecretario con detalles del volumen de recolección de residuos del ultimo mes.
