@@ -8,7 +8,3 @@ Como administrador municipal quiero que la aplicacion cuente con una seccion “
 - Que el vecino pueda elegir un punto y saber cuando este estará disponible. 
 - Que se muestre un mapa con los puntos itinerantes.
 - Que se pueda visualizar el coronograma.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NDQ0ODQwNF19
--->
