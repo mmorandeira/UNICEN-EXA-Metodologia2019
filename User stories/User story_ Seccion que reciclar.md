@@ -1,4 +1,4 @@
-# User Story Specification:  Seccion que reciclar 
+# User Story Specification: Seccion que reciclar 
 
 ## 1.	Description
 
@@ -8,8 +8,3 @@ Como administrador municipal quiero que la aplicación cuente con una sección �
 - Contar con una base de datos que contenga los productos reciclables. 
 - Permitir que se pueda modificar por el administrador de la municipalidad.
 -  Permitir que en la aplicación se pueda visualizar una tabla con los productos de la base de datos.
-
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0NzMyOTkxXX0=
--->
