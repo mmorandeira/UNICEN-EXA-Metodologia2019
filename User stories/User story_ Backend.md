@@ -3,7 +3,7 @@
 
 ## 1.	Description
 
-Como empleado municipal quiero que el sistema me brinde la cantidad y el tipo de material reciclado que se registre por barrio/manzana/hogar, y las guarde en un historial para que luego poder calcular estadísticas.
+Como empleado municipal quiero que el sistema me brinde la cantidad y el tipo de material reciclado que se registra por barrio/manzana/hogar y las guarde en un historial para luego poder calcular estadísticas.
 
 ## 2.	Acceptance Criteria
 
