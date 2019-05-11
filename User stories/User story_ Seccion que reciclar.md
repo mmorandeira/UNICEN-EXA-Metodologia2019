@@ -8,4 +8,4 @@ Como administrador municipal quiero que la aplicación cuente con una sección �
 -   Contar con una base de datos que contenga los productos reciclables. 
 -   Permitir que se pueda modificar por el administrador de la municipalidad.
 -   Permitir que en la aplicación se pueda visualizar una tabla con los productos de la base de datos.
--   Si se ingresa un producto que ya esta registrado se notifica con un mensaje.
+
