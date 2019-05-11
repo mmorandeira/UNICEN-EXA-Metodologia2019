@@ -1,12 +1,9 @@
-# User Story Specification: <Interfaz de Chófer\>
+# User Story Specification: Interfaz de Chófer
 
 ## 1.	Description
 Como chofer quiero conocer los puntos itinerantes que se deben recorrer, pudiendo ver cual es el siguiente punto a recolectar.
 ## 2.	Acceptance Criteria
 
-- Se le muestra al chofer los puntos a recolectar. 
+- Se le muestra, en un mapa, al chofer los puntos a recolectar. 
 - Deben estar ordenadas en una lista por prioridades. 
 - Los puntos recogidos deben dejar de mostrarse.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDU1Mjg5M119
--->
