@@ -6,5 +6,5 @@ Como administrador quiero agregar o modificar el contenido de la base de datos p
 
 ## 2.	Acceptance Criteria
 - Validar los datos ingresados.
-- Verificar que no se cargen codigos de barras que ya estan cargados.
+- Verificar que no se carguen codigos de barras que ya estan cargados.
 - Que se ingrese todos los datos necesarios para calcular las estadisticas(volumen promedio, peso promedio, etc).
