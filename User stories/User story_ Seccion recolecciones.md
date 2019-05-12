@@ -7,4 +7,4 @@ Como administrador municipal quiero que la aplicacion cuente con una seccion “
 ## 2.	Acceptance Criteria
 - Que el vecino pueda elegir un punto y saber cuando este estará disponible. 
 - Que se muestre un mapa con los puntos itinerantes.
-- Que se pueda visualizar el coronograma.
+- Que se pueda visualizar el cronograma.
