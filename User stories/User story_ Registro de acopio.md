@@ -11,3 +11,4 @@ Como usuario quiero registrar mi acopio, para informar al municipio la cantidad 
 -   Que se actualice el historial.
 -   Los productos registrados deben ser reciclables.
 -   Se seleccione la cantidad del producto a registrar.
+-   Poder ingresar el producto, con la camara escaneando el codigo de barras o tipeandolo manualmente.

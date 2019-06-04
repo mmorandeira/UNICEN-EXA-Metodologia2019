@@ -4,5 +4,5 @@
 Como administrador municipal quiero que la aplicación cuente con estadísticas respecto al ahorro económico producto del material reciclado para motivar a los vecinos a utilizar los puntos limpios itinerantes.
 ## 2.	Acceptance Criteria
 
-- Poder visualizar en forma de gráfico las estadísticas. 
+- Poder visualizar en forma de gráfico las estadísticas del ahorro producido. 
 - Se debe poder elegir el periodo de tiempo del que se quieren visualizar las estadísticas.
