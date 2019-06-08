@@ -2,26 +2,32 @@ package backend;
 
 import java.util.HashMap;
 
+import etc.User;
+
 public class UserManager {
-    private HashMap<String,User> usuarios;
+    private HashMap<String, User> usuarios;
     static UserManager instance;
 
-    private UserManager(){
-        this.usuarios = new HashMap<String,User>();
+    private UserManager() {
+        this.usuarios = new HashMap<String, User>();
     }
 
     public static UserManager getInstance() {
-        if(instance == null)
+        if (instance == null)
             instance = new UserManager();
         return instance;
     }
 
-    public void addUser(User usuario){
-        usuarios.put(usuario.getMail(),usuario);
+    public void addUser(User usuario) {
+        usuarios.put(usuario.getMail(), usuario);
     }
 
-    public boolean validarUsuario(String mail, String password){
+    public boolean validarUsuario(String mail, String password) {
         return usuarios.containsKey(mail) && usuarios.get(mail).getPassword().equals(password);
+    }
+
+    public void imprimirUsuarios() {
+        System.out.println(usuarios);
     }
 
 }

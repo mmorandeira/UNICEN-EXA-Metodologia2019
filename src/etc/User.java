@@ -1,10 +1,11 @@
 package etc;
+
 import java.util.Vector;
 
 public class User {
-	
 
-    private Vector<Pair<Producto,Integer>> coleccionDeAcopio;
+
+    private Vector<Pair<Product, Integer>> coleccionDeAcopio;
     private String nombre;
     private String apellido;
     private String domicilio;  //ubicacion?
@@ -19,27 +20,26 @@ public class User {
         this.password = password;
         this.mail = mail;
         this.dni = dni;
-        Vector<Pair<Producto,Integer>> coleccion;
-        this.coleccionDeAcopio = coleccion;
+        this.coleccionDeAcopio = new Vector<Pair<Product, Integer>>();
     }
 
-    public Pair<Producto,Integer> getAcopio (int i){
+    public Pair<Product, Integer> getAcopio(int i) {
         return coleccionDeAcopio.elementAt(i);
     }
 
-    public void addAcopio (Pair<Producto,Integer> acopio){
+    public void addAcopio(Pair<Product, Integer> acopio) {
         coleccionDeAcopio.add(acopio);
     }
 
-    public double getPromedio(){ //devuelve la suma de cantidades de productos
-       int suma=0;
-       for (int i; i<coleccionDeAcopio.size();i++){
-           suma+=coleccionDeAcopio.elementAt(i).getSecond();
-       }
-       return suma;
+    public double getPromedio() { //devuelve la suma de cantidades de productos
+        int suma = 0;
+        for (int i; i < coleccionDeAcopio.size(); i++) {
+            suma += coleccionDeAcopio.elementAt(i).getSecond();
+        }
+        return suma;
     }
 
-    public int getAcopioSize(){
+    public int getAcopioSize() {
         return coleccionDeAcopio.size();
     }
 
