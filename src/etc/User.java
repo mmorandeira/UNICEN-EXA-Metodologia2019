@@ -33,7 +33,7 @@ public class User {
 
     public double getPromedio() { //devuelve la suma de cantidades de productos
         int suma = 0;
-        for (int i; i < coleccionDeAcopio.size(); i++) {
+        for (int i=0; i < coleccionDeAcopio.size(); i++) {
             suma += coleccionDeAcopio.elementAt(i).getSecond();
         }
         return suma;
