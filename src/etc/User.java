@@ -12,6 +12,17 @@ public class User {
     private String mail;
     private int dni;
 
+    public User(String nombre, String apellido, String domicilio, String password, String mail, int dni) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.domicilio = domicilio;
+        this.password = password;
+        this.mail = mail;
+        this.dni = dni;
+        Vector<Pair<Producto,Integer>> coleccion;
+        this.coleccionDeAcopio = coleccion;
+    }
+
     public Pair<Producto,Integer> getAcopio (int i){
         return coleccionDeAcopio.elementAt(i);
     }
@@ -80,4 +91,14 @@ public class User {
         this.dni = dni;
     }
 
+    public String toString() {
+        return "User{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", domicilio='" + domicilio + '\'' +
+                ", password='" + password + '\'' +
+                ", mail='" + mail + '\'' +
+                ", dni=" + dni +
+                '}';
+    }
 }
