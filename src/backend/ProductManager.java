@@ -1,5 +1,7 @@
 package backend;
 
+import java.util.hashMap;
+
 Public class ProductManager{
 	
 	private HashMap<String, Product> productos;
@@ -19,6 +21,10 @@ Public class ProductManager{
         productos.put(producto.getCodigoDeBarra(), producto);
     }
  
+    public void deleteProduct(String codigodebarra) {
+    	this.productos.remove(codigodebarra);
+    }
+    
     public boolean existeProducto(String codigodebarra) {
         return productos.conteinskey(codigodebarra);
     }    
