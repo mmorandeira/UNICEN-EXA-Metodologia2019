@@ -1,8 +1,8 @@
 package backend;
 import java.util.Date;
-import java.util.Iterator;
+//import java.util.Iterator;
 import java.util.List;
-import java.util.Vector;
+//import java.util.Vector;
 import etc.Pair;
 import etc.Product;
 import etc.PuntoItinerante;
@@ -34,13 +34,5 @@ public class Municipio {
 		return "Estadistica";
 	}
 
-
-	
-	/*public boolean existePunto(PuntoItinerante p) {
-		for(int i=0; i< PuntosItinerantes.size(); i++)
-			if((PuntosItinerantes.get(i))
-				return true;
-		return false;
-	}*/
 	
 }
