@@ -36,12 +36,22 @@ public class UserApp {
     }
 
     public void verAhorro() {
-    	
+    	// Hacer simulacion, mensajes con municipio
+    }
+    
+    
+    public void verCronograma() {
+    	// Hacer simulacion, mensajes con municipio
+    }
+    
+    public void verAyudaONG() {
+    	// Hacer simulacion, mensajes con municipio
     }
     
     public void addProduct(String codBarras, int cant) {
-    	if (this.productManager.existeProduct(codBarras)) {
-    		Pair <this.productManager.getProduct(codBarras), cant> pAux;
+    	if (this.productManager.existeProducto(codBarras)) {
+    		Product p = this.productManager.getProducto(codBarras);
+    		Pair <p, cant> pAux;
     		this.usuario.addAcopio(pAux);
     	}
     }
