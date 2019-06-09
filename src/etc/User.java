@@ -20,14 +20,14 @@ public class User {
         this.password = password;
         this.mail = mail;
         this.dni = dni;
-        this.coleccionDeAcopio = new Vector<Pair<Product, Integer>>();
+        this.coleccionDeAcopio = new Vector<Pair<Product, int>>();
     }
 
-    public Pair<Product, Integer> getAcopio(int i) {
+    public Pair<Product, int> getAcopio(int i) {
         return coleccionDeAcopio.elementAt(i);
     }
 
-    public void addAcopio(Pair<Product, Integer> acopio) {
+    public void addAcopio(Pair<Product, int> acopio) {
         coleccionDeAcopio.add(acopio);
     }
 
