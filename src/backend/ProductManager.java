@@ -24,7 +24,7 @@ Public class ProductManager{
     }    
     
     public Product getProducto(String codigodebarra) {
-        return productos.get(producto.getCodigoDeBarra());
+        return productos.get(codigodebarra);
     }       
     
 }

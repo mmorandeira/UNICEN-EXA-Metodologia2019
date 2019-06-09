@@ -5,7 +5,7 @@ import java.util.Vector;
 public class User {
 
 
-    private Vector<Pair<Product, Integer>> coleccionDeAcopio;
+    private Vector<Pair<Product, int>> coleccionDeAcopio;
     private String nombre;
     private String apellido;
     private String domicilio;  //ubicacion?
