@@ -5,7 +5,7 @@ import java.util.Vector;
 public class User {
 
 
-    private Vector<Pair<Product, int>> coleccionDeAcopio;
+    private Vector<Pair<Product, Integer>> coleccionDeAcopio;
     private String nombre;
     private String apellido;
     private String domicilio;  //ubicacion?
@@ -20,14 +20,14 @@ public class User {
         this.password = password;
         this.mail = mail;
         this.dni = dni;
-        this.coleccionDeAcopio = new Vector<Pair<Product, int>>();
+        this.coleccionDeAcopio = new Vector<Pair<Product, Integer>>();
     }
 
-    public Pair<Product, int> getAcopio(int i) {
+    public Pair<Product, Integer> getAcopio(int i) {
         return coleccionDeAcopio.elementAt(i);
     }
 
-    public void addAcopio(Pair<Product, int> acopio) {
+    public void addAcopio(Pair<Product, Integer> acopio) {
         coleccionDeAcopio.add(acopio);
     }
 
