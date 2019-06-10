@@ -8,11 +8,11 @@ public class Main {
 		ProductManager pm = ProductManager.getInstance();
 		UserApp app = new UserApp();
         UserManager userManager = UserManager.getInstance();
-        User flizalde = new User("Facundo Manuel","Lizalde Frias", "Alsina 70", "notelavoyadecir","facundolizalde@gmail.com",39671568);
-        User sur = new User("Facundo", "Martinez Abalo", "Costa Rica 562", "contrasenia", "ilovepenguins@gmail.com", 38957200);
-        User pela = new User("Eliel Arturo", "Catauro Nardela", "Mirage 123", "dizleccia", "tubizcochito@gmail.com", 39423084);
-        User mati = new User("Matias", "Morandeira Lucero", "Alem 674", "horaciolovenohomo", "matimoran@gmail.com", 40020042);
-        User juan = new User("Juan Pablo","Correa Divitto", "Rosales 2283", "suplente4ever", "juampicorrea21@gmail.com", 41324982);
+        User flizalde = new User("Facundo Manuel","Lizalde Frias", "Alsina 70", "No barrio", "notelavoyadecir","facundolizalde@gmail.com", 39671568);
+        User sur = new User("Facundo", "Martinez Abalo", "Costa Rica 562", "Terminal", "contrasenia", "ilovepenguins@gmail.com", 38957200);
+        User pela = new User("Eliel Arturo", "Catauro Nardela", "Mirage 123", "Mirage", "dizleccia", "tubizcochito@gmail.com", 39423084);
+        User mati = new User("Matias", "Morandeira Lucero", "Alem 674", "Terminal", "horaciolovenohomo", "matimoran@gmail.com", 40020042);
+        User juan = new User("Juan Pablo","Correa Divitto", "Rosales 2283", "Villa Aguirre", "suplente4ever", "juampicorrea21@gmail.com", 41324982);
         userManager.addUser(flizalde);
         userManager.addUser(sur);
         userManager.addUser(pela);
@@ -36,6 +36,6 @@ public class Main {
         app.login("matimoran@gmail.com", "horaciolovenohomo");
         app.addProduct("00000001", 3);
         System.out.println(app.calcularEstadisticas()+ "kg");
-        app.signIn("Sofia", "Mangaterra", "sofimangaterra@gmail.com", "123456789", "Calle 123", 40124452);
+        app.signIn("Sofia", "Mangaterra", "sofimangaterra@gmail.com", "123456789", "Calle 123", "Mirage", 40124452);
     }
 }

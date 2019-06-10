@@ -40,9 +40,9 @@ public class UserApp {
     }
 
     
-    public void signIn(String nombre, String apellido, String mail, String pass, String domicilio, int dni) {
+    public void signIn(String nombre, String apellido, String mail, String pass, String domicilio, String barrio, int dni) {
     	if (!this.userManager.existeUser(mail) && !this.logeado) {
-    		User aux = new User(nombre, apellido, domicilio, pass, mail, dni);
+    		User aux = new User(nombre, apellido, domicilio, barrio, pass, mail, dni);
     		userManager.addUser(aux);
 			login(mail, pass);
     	}

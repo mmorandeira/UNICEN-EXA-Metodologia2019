@@ -9,16 +9,18 @@ public class User {
     private Vector<Pair<Product, Integer>> coleccionDeAcopio;
     private String nombre;
     private String apellido;
-    private String domicilio;  //ubicacion?
+    private String domicilio;
+    private String barrio;//ubicacion?
     private String password;
     private String mail;
     private Vector<LocalDate> activity;
     private int dni;
 
-    public User(String nombre, String apellido, String domicilio, String password, String mail, int dni) {
+    public User(String nombre, String apellido, String domicilio, String barrio, String password, String mail, int dni) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.domicilio = domicilio;
+        this.barrio = barrio;
         this.password = password;
         this.mail = mail;
         this.dni = dni;
@@ -70,6 +72,15 @@ public class User {
         this.domicilio = domicilio;
     }
 
+    
+    public void setBarrio(String barrio) {
+    	this.barrio = barrio;
+    }
+    
+    public String getBarrio() {
+    	return this.barrio;
+    }
+    
     public String getPassword() {
         return password;
     }
