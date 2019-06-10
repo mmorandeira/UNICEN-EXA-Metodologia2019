@@ -121,4 +121,9 @@ public class User {
     public void addActivity(LocalDate activity){
         this.activity.add(activity);
     }
+    
+    public String getActivity() {
+    	return this.activity.toString();
+    }
+    
 }
