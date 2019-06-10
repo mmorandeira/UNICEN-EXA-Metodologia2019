@@ -35,6 +35,7 @@ public class Main {
         userManager.imprimirUsuarios();
         app.login("matimoran@gmail.com", "horaciolovenohomo");
         app.addProduct("00000001", 3);
-        System.out.println(app.calcularEstadisticas());
+        System.out.println(app.calcularEstadisticas()+ "kg");
+        app.signIn("Sofia", "Mangaterra", "sofimangaterra@gmail.com", "123456789", "Calle 123", 40124452);
     }
 }

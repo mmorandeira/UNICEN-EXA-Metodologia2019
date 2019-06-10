@@ -34,10 +34,10 @@ public class User {
         coleccionDeAcopio.add(acopio);
     }
 
-    public double getPromedio() { //devuelve la suma de cantidades de productos
+    public double getCantEnPeso() { //devuelve la suma de cantidades en kg
         int suma = 0;
         for (int i=0; i < coleccionDeAcopio.size(); i++) {
-            suma += coleccionDeAcopio.elementAt(i).getSecond();
+            suma += (coleccionDeAcopio.elementAt(i).getSecond()* coleccionDeAcopio.elementAt(i).getFirst().getPeso());
         }
         return suma;
     }

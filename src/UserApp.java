@@ -17,7 +17,7 @@ public class UserApp {
         this.mapa = Mapa.getInstance();
         this.productManager = ProductManager.getInstance();
         this.logeado = false;
-        this.usuario = usuario;
+        this.usuario = null;
     }
 
     public void login(String mail, String pass) {
@@ -35,9 +35,18 @@ public class UserApp {
     }
     
     public double calcularEstadisticas() {
-    	return this.usuario.getPromedio();
+    	return this.usuario.getCantEnPeso();
     }
 
+    
+    public void signIn(String nombre, String apellido, String mail, String pass, String domicilio, int dni) {
+    	if (!existeUser(mail) && !this.logeado) {
+    		User aux = new User(nombre, apellido, domicilio, pass, mail, dni);
+    		userManager.addUser(aux);
+			login(mail, pass);
+    	}
+    }
+    
     public void verAhorro() {
     	// Hacer simulacion, mensajes con municipio
     }
