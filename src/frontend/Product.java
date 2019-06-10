@@ -6,12 +6,14 @@ public class Product {
     private String nombre;
     private float peso;
     private float volumen;
+    private String material;
 
-    public Product(String codigoDeBarra, String nombre, float peso, float volumen) {
+    public Product(String codigoDeBarra, String nombre, float peso, float volumen, String material) {
         this.codigoDeBarra = codigoDeBarra;
         this.nombre = nombre;
         this.peso = peso;
         this.volumen = volumen;
+        this.material = material;
     }
 
     public String getCodigoDeBarra() {
@@ -46,4 +48,11 @@ public class Product {
         this.volumen = volumen;
     }
 
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
 }
