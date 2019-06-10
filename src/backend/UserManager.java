@@ -2,7 +2,7 @@ package backend;
 
 import java.util.HashMap;
 
-import etc.User;
+import frontend.User;
 
 public class UserManager {
     private HashMap<String, User> usuarios;

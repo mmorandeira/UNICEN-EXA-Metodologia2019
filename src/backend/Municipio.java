@@ -3,10 +3,9 @@ package backend;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import etc.Pair;
-import etc.Product;
-import etc.PuntoItinerante;
-import etc.User;
+import util.Pair;
+import frontend.Product;
+import frontend.User;
 
 public class Municipio {
 	ProductManager p;

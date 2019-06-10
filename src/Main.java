@@ -1,7 +1,8 @@
 import backend.UserManager;
-import etc.User;
+import frontend.UserApp;
+import frontend.User;
 import backend.ProductManager;
-import etc.Product;
+import frontend.Product;
 
 public class Main {
 	public static void main(String[] args) {

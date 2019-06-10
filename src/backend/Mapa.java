@@ -1,6 +1,6 @@
 package backend;
 
-import etc.Pair;
+import util.Pair;
 
 import java.util.Vector;
 

@@ -1,6 +1,6 @@
 package backend;
 
-import etc.Product;
+import frontend.Product;
 import java.util.HashMap;
 
 public class ProductManager{

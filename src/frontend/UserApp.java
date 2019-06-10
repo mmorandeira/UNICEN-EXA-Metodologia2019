@@ -1,9 +1,10 @@
+package frontend;
+
 import backend.UserManager;
-import etc.Pair;
-import etc.User;
+import util.Pair;
+
 import java.time.LocalDate;
 import backend.ProductManager;
-import etc.Product;
 import backend.Mapa;
 
 public class UserApp {
