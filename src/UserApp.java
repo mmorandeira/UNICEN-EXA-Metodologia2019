@@ -4,6 +4,7 @@ import etc.User;
 import java.time.LocalDate;
 import backend.ProductManager;
 import etc.Product;
+import backend.Mapa;
 
 public class UserApp {
     private UserManager userManager;
