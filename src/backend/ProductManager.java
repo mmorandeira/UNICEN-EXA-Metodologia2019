@@ -27,7 +27,7 @@ public class ProductManager{
     }
     
     public boolean existeProducto(String codigodebarra) {
-        return productos.conteinskey(codigodebarra);
+        return productos.containsKey(codigodebarra);
     }    
     
     public Product getProducto(String codigodebarra) {
