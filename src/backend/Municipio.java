@@ -1,4 +1,5 @@
 package backend;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -12,7 +13,7 @@ public class Municipio {
 	private List<PuntoItinerante> puntoItinerantes;
 	private List<String> ong;
 	private List<Pair <String, Date>> cronograma;
-	private List<Pair <User,Pair<Product,int>>> acopioAcumulado;
+	private List<Pair <User,Pair<Product,Integer>>> acopioAcumulado;
 
 	private Municipio(){
 		p = ProductManager.getInstance();
