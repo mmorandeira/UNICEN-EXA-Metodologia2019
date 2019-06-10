@@ -41,7 +41,7 @@ public class UserApp {
 
     
     public void signIn(String nombre, String apellido, String mail, String pass, String domicilio, int dni) {
-    	if (!existeUser(mail) && !this.logeado) {
+    	if (!this.userManager.existeUser(mail) && !this.logeado) {
     		User aux = new User(nombre, apellido, domicilio, pass, mail, dni);
     		userManager.addUser(aux);
 			login(mail, pass);
