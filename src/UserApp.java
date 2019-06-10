@@ -1,6 +1,9 @@
 import backend.UserManager;
+import etc.Pair;
 import etc.User;
 import java.time.LocalDate;
+import backend.ProductManager;
+import etc.Product;
 
 public class UserApp {
     private UserManager userManager;
@@ -11,7 +14,7 @@ public class UserApp {
 
     public UserApp(){
         this.userManager=UserManager.getInstance();
-        this.mapa = Mapa.getIntance();
+        this.mapa = Mapa.getInstance();
         this.productManager = ProductManager.getInstance();
         this.logeado = false;
         this.usuario = usuario;
@@ -19,7 +22,7 @@ public class UserApp {
 
     public void login(String mail, String pass) {
     	if (this.userManager.existeUser(mail)) {
-    		if (this.userManager.validarPassword(pass)) {
+    		if (this.userManager.validarPassword(mail,pass)) {
     			this.logeado = true;
     			this.usuario = this.userManager.getUser(mail);
     			this.usuario.addActivity(LocalDate.now());
@@ -48,10 +51,10 @@ public class UserApp {
     	// Hacer simulacion, mensajes con municipio
     }
     
-    public void addProduct(String codBarras, int cant) {
+    public void addProduct(String codBarras, Integer cant) {
     	if (this.productManager.existeProducto(codBarras)) {
     		Product p = this.productManager.getProducto(codBarras);
-    		Pair <p, cant> pAux;
+            Pair<Product, Integer> pAux = new Pair<Product, Integer>(p,cant);
     		this.usuario.addAcopio(pAux);
     	}
     }

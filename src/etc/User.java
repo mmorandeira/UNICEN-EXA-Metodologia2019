@@ -1,5 +1,6 @@
 package etc;
 
+import java.time.LocalDate;
 import java.util.Vector;
 
 public class User {
@@ -11,6 +12,7 @@ public class User {
     private String domicilio;  //ubicacion?
     private String password;
     private String mail;
+    private Vector<LocalDate> activity;
     private int dni;
 
     public User(String nombre, String apellido, String domicilio, String password, String mail, int dni) {
@@ -21,6 +23,7 @@ public class User {
         this.mail = mail;
         this.dni = dni;
         this.coleccionDeAcopio = new Vector<Pair<Product, Integer>>();
+        this.activity = new Vector<LocalDate>();
     }
 
     public Pair<Product, Integer> getAcopio(int i) {
@@ -100,5 +103,9 @@ public class User {
                 ", mail='" + mail + '\'' +
                 ", dni=" + dni +
                 '}';
+    }
+
+    public void addActivity(LocalDate activity){
+        this.activity.add(activity);
     }
 }

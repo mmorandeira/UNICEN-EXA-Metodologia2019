@@ -22,12 +22,25 @@ public class UserManager {
         usuarios.put(usuario.getMail(), usuario);
     }
 
-    public boolean validarUsuario(String mail, String password) {
-        return usuarios.containsKey(mail) && usuarios.get(mail).getPassword().equals(password);
-    }
-
     public void imprimirUsuarios() {
         System.out.println(usuarios);
     }
 
+    public boolean existeUser(String mail){
+        return usuarios.containsKey(mail);
+    }
+
+    public boolean validarPassword(String mail,String password){
+        if(existeUser(mail)){
+            return usuarios.get(mail).getPassword().equals(password);
+        }
+        return false;
+    }
+
+    public User getUser(String mail){
+        if(existeUser(mail)){
+            return usuarios.get(mail);
+        }
+        return null;
+    }
 }
