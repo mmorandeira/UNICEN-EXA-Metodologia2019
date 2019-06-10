@@ -1,8 +1,9 @@
 package backend;
 
-import java.util.hashMap;
+import etc.Product;
+import java.util.HashMap;
 
-Public class ProductManager{
+public class ProductManager{
 	
 	private HashMap<String, Product> productos;
     static ProductManager instance;
