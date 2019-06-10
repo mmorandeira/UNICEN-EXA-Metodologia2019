@@ -6,6 +6,7 @@ import etc.Product;
 public class Main {
 	public static void main(String[] args) {
 		ProductManager pm = ProductManager.getInstance();
+		UserApp app = new UserApp();
         UserManager userManager = UserManager.getInstance();
         User flizalde = new User("Facundo Manuel","Lizalde Frias", "Alsina 70", "notelavoyadecir","facundolizalde@gmail.com",39671568);
         User sur = new User("Facundo", "Martinez Abalo", "Costa Rica 562", "contrasenia", "ilovepenguins@gmail.com", 38957200);
@@ -32,5 +33,8 @@ public class Main {
         pm.addProduct(p6);
         pm.addProduct(p7);
         userManager.imprimirUsuarios();
+        app.login("matimoran@gmail.com", "horaciolovenohomo");
+        app.addProduct("00000001", 3);
+        System.out.println(app.calcularEstadisticas());
     }
 }
