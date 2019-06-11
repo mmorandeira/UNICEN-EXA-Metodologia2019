@@ -1,3 +1,5 @@
+import backend.CalculadoraEstadistica;
+import backend.EstadisticaPorBarrio;
 import backend.UserManager;
 import frontend.UserApp;
 import frontend.User;
@@ -15,14 +17,14 @@ public class Main {
                 escenario1();
         }
 
-        public static void inicializar() {
+        public static void inicializar1() {
                 productManager = ProductManager.getInstance();
                 userManager = UserManager.getInstance();
                 userApp = new UserApp();
                 User flizalde = new User("Facundo Manuel", "Lizalde Frias", "Alsina 70", "No barrio", "notelavoyadecir", "facundolizalde@gmail.com", 39671568);
                 User sur = new User("Facundo", "Martinez Abalo", "Costa Rica 562", "Terminal", "contrasenia", "ilovepenguins@gmail.com", 38957200);
                 User pela = new User("Eliel Arturo", "Catauro Nardela", "Mirage 123", "Mirage", "dizleccia", "tubizcochito@gmail.com", 39423084);
-                User mati = new User("Matias", "Morandeira Lucero", "Alem 674", "Terminal", "horaciolovenohomo", "matimoran@gmail.com", 40020042);
+                User mati = new User("Matias", "Morandeira Lucero", "Alem 674", "Terminal", "ahreloco", "matimoran@gmail.com", 40020042);
                 User juan = new User("Juan Pablo", "Correa Divitto", "Rosales 2283", "Villa Aguirre", "suplente4ever", "juampicorrea21@gmail.com", 41324982);
                 userManager.addUser(flizalde);
                 userManager.addUser(sur);
@@ -58,9 +60,16 @@ public class Main {
                 System.out.println(userApp.calcularEstadisticas() + "kg");
         }
         
-        
+        /*En escenario la municipalidad desea vizualizar las
+        * estadisticas del barrio "MIRAGE" para esto
+        * se crean unos productos y unos vecinos y son registrados los acopios
+        * (para esto se usa el metodo inicializar1())
+        * se creea una instancia de la clase EstadisticaPorBarrio
+        * y se llama al metoodo calcular
+        * */
         public static void escenario2(){
-        	
+                EstadisticaPorBarrio c1 = new EstadisticaPorBarrio("MIRAGE");
+
         }
         
         
