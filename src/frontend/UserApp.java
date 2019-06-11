@@ -23,7 +23,7 @@ public class UserApp {
     }
 
     public void login(String mail, String pass) {
-    	if (this.userManager.existeUser(mail)) {
+    	if ((this.userManager.existeUser(mail)) && !this.logeado) {
     		if (this.userManager.validarPassword(mail,pass)) {
     			this.logeado = true;
     			this.usuario = this.userManager.getUser(mail);
@@ -37,7 +37,9 @@ public class UserApp {
     }
     
     public double calcularEstadisticas() {
-    	return this.usuario.getCantEnPeso();
+    	if (this.logeado)
+    		return this.usuario.getCantEnPeso();
+    	return 0;
     }
 
     
@@ -47,6 +49,12 @@ public class UserApp {
     		userManager.addUser(aux);
 			login(mail, pass);
     	}
+    }
+    
+    
+    public void logOut() {
+    	this.usuario = null;
+    	this.logeado = false;
     }
     
     public void verAhorro() {
@@ -63,7 +71,7 @@ public class UserApp {
     }
     
     public void addProduct(String codBarras, Integer cant) {
-    	if (this.productManager.existeProducto(codBarras)) {
+    	if ((this.productManager.existeProducto(codBarras)) && this.logeado) {
     		Product p = this.productManager.getProducto(codBarras);
             Pair<Product, Integer> pAux = new Pair<Product, Integer>(p,cant);
     		this.usuario.addAcopio(pAux);

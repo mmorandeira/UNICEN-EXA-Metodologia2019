@@ -4,11 +4,11 @@ public class Product {
 
     private String codigoDeBarra;
     private String nombre;
-    private float peso;
-    private float volumen;
+    private double peso;
+    private double volumen;
     private String material;
 
-    public Product(String codigoDeBarra, String nombre, float peso, float volumen, String material) {
+    public Product(String codigoDeBarra, String nombre, double peso, double volumen, String material) {
         this.codigoDeBarra = codigoDeBarra;
         this.nombre = nombre;
         this.peso = peso;
@@ -32,19 +32,19 @@ public class Product {
         this.nombre = nombre;
     }
 
-    public float getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public void setPeso(float peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 
-    public float getVolumen() {
+    public double getVolumen() {
         return volumen;
     }
 
-    public void setVolumen(float volumen) {
+    public void setVolumen(double volumen) {
         this.volumen = volumen;
     }
 
