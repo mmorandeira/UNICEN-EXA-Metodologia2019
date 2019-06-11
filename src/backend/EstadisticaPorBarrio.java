@@ -17,13 +17,12 @@ public class EstadisticaPorBarrio implements CalculadoraEstadistica {
     @Override
     public double calcularKilos(Municipio municipio) {
         List<Pair<User, Pair<Product, Integer>>> aux = municipio.getAcopioAcumulado();
-        double result;
-        for()
+        double result = 0;
         return result;
     }
 
     @Override
-    public double calcularVolumen() {
+    public double calcularVolumen(Municipio municipio) {
         return 0;
     }
 }

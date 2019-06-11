@@ -8,7 +8,7 @@ public class EstadisticaPorMaterial implements CalculadoraEstadistica {
     }
 
     @Override
-    public double calcularVolumen() {
+    public double calcularVolumen(Municipio municipio) {
         return 0;
     }
 }
