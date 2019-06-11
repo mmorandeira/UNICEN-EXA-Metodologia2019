@@ -1,5 +1,6 @@
 package backend;
 
 public interface CalculadoraEstadistica {
-    String calcular(Municipio municipio);
+    double calcularKilos(Municipio municipio);
+    double calcularVolumen(Municipio);
 }
