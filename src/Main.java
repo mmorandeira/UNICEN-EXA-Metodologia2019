@@ -68,8 +68,8 @@ public class Main {
         * */
         public static void escenario2(){
             EstadisticaPorBarrio c1 = new EstadisticaPorBarrio("Mirage");
-            System.out.println(c1.calcularKilos(municipio));
-            System.out.println(c1.calcularVolumen(municipio));
+            System.out.println(c1.calcularKilosAcumulado(municipio));
+            System.out.println(c1.calcularVolumenAcumulado(municipio));
         }
         
         
