@@ -48,6 +48,17 @@ public class Product {
         this.volumen = volumen;
     }
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "codigoDeBarra='" + codigoDeBarra + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", peso=" + peso +
+                ", volumen=" + volumen +
+                ", material='" + material + '\'' +
+                '}';
+    }
+
     public String getMaterial() {
         return material;
     }

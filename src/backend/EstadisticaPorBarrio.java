@@ -15,14 +15,26 @@ public class EstadisticaPorBarrio implements CalculadoraEstadistica {
     }
 
     @Override
-    public double calcularKilos(Municipio municipio) {
+    public double calcularKilosAcumulado(Municipio municipio) {
         List<Pair<User, Pair<Product, Integer>>> aux = municipio.getAcopioAcumulado();
         double result = 0;
+        for(Pair<User, Pair<Product, Integer>> pair : aux){
+            if(pair.getFirst().getBarrio().equals(barrio)){
+                result += pair.getSecond().getFirst().getPeso() * pair.getSecond().getSecond();
+            }
+        }
         return result;
     }
 
     @Override
-    public double calcularVolumen(Municipio municipio) {
-        return 0;
+    public double calcularVolumenAcumulado(Municipio municipio) {
+        List<Pair<User, Pair<Product, Integer>>> aux = municipio.getAcopioAcumulado();
+        double result = 0;
+        for(Pair<User, Pair<Product, Integer>> pair : aux){
+            if(pair.getFirst().getBarrio().equals(barrio)){
+                result += pair.getSecond().getFirst().getVolumen() * pair.getSecond().getSecond();
+            }
+        }
+        return result;
     }
 }

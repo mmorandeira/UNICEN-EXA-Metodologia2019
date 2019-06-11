@@ -1,6 +1,6 @@
 package backend;
 
 public interface CalculadoraEstadistica {
-    double calcularKilos(Municipio municipio);
-    double calcularVolumen(Municipio municipio);
+    double calcularKilosAcumulado(Municipio municipio);
+    double calcularVolumenAcumulado(Municipio municipio);
 }

@@ -1,26 +1,25 @@
-import backend.CalculadoraEstadistica;
-import backend.EstadisticaPorBarrio;
-import backend.UserManager;
+import backend.*;
 import frontend.UserApp;
 import frontend.User;
-import backend.ProductManager;
 import frontend.Product;
 
 public class Main {
         private static ProductManager productManager;
         private static UserManager userManager;
         private static UserApp userApp;
-
+        private static Municipio municipio;
 
         public static void main(String[] args) {
-                inicializar();
+                inicializar1();
                 escenario1();
+                escenario2();
         }
 
         public static void inicializar1() {
                 productManager = ProductManager.getInstance();
                 userManager = UserManager.getInstance();
                 userApp = new UserApp();
+                municipio = Municipio.getInstance();
                 User flizalde = new User("Facundo Manuel", "Lizalde Frias", "Alsina 70", "No barrio", "notelavoyadecir", "facundolizalde@gmail.com", 39671568);
                 User sur = new User("Facundo", "Martinez Abalo", "Costa Rica 562", "Terminal", "contrasenia", "ilovepenguins@gmail.com", 38957200);
                 User pela = new User("Eliel Arturo", "Catauro Nardela", "Mirage 123", "Mirage", "dizleccia", "tubizcochito@gmail.com", 39423084);
@@ -68,8 +67,9 @@ public class Main {
         * y se llama al metoodo calcular
         * */
         public static void escenario2(){
-                EstadisticaPorBarrio c1 = new EstadisticaPorBarrio("MIRAGE");
-
+            EstadisticaPorBarrio c1 = new EstadisticaPorBarrio("Mirage");
+            System.out.println(c1.calcularKilos(municipio));
+            System.out.println(c1.calcularVolumen(municipio));
         }
         
         
