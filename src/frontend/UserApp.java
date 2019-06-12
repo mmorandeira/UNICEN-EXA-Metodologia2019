@@ -15,7 +15,10 @@ public class UserApp {
     private Mapa mapa;
     private ProductManager productManager;
     private Municipio municipio;
-
+/*  En esta clase se encuentra la aplicacion del usuario.
+    esta misma hace de intermediario entre el usuario y el backend
+    peritiendo loguearse, agregar productos al acopio  y aceder a las distintas secciones de la aplicacion.
+ */
     public UserApp(){
         this.userManager=UserManager.getInstance();
         this.mapa = Mapa.getInstance();
@@ -25,6 +28,10 @@ public class UserApp {
         this.municipio = Municipio.getInstance();
     }
 
+    /* Si el mail existe  y el usuario no esta logueado,
+    se verifica que la password ingresada sea la correspondiente a ese mail
+    de ser correcto el usuario se loguea y añade la fecha actual a la actividad del usuario
+     */
     public void login(String mail, String pass) {
         if ((this.userManager.existeUser(mail)) && !this.logeado) {
             if (this.userManager.validarPassword(mail,pass)) {
@@ -45,7 +52,10 @@ public class UserApp {
         return 0;
     }
 
-
+    /* Este metodo permite al usuario registrarse en el sistema
+       verificando que el mail del mismo no este asignado a ningun otro usuario.
+       luego de ser registrado el mismo se loguea.
+     */
     public void signIn(String nombre, String apellido, String mail, String pass, String domicilio, String barrio, int dni) {
         if (!this.userManager.existeUser(mail) && !this.logeado) {
             User aux = new User(nombre, apellido, domicilio, barrio, pass, mail, dni);
@@ -72,7 +82,7 @@ public class UserApp {
     public void verAyudaONG() {
         // Hacer simulacion, mensajes con municipio
     }
-
+    // agrega productos siempre y cuando este producto este previamente en el sistema
     public void addProduct(String codBarras, Integer cant) {
         if ((this.productManager.existeProducto(codBarras)) && this.logeado) {
             Product p = this.productManager.getProducto(codBarras);
