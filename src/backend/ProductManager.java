@@ -11,7 +11,11 @@ public class ProductManager{
     private ProductManager() {
         this.productos = new HashMap<String, Product>();
     }
-	
+
+    /*  Esta clase permite el manejo de productos,cada producto es unico
+        Por lo cual no se permite mas de una instancia del mismo.
+        Permite validar la existencia de un producto , eliminarlo y devolverlo.
+    */
     public static ProductManager getInstance() {
         if (instance == null)
             instance = new ProductManager();
