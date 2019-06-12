@@ -90,7 +90,6 @@ public class User {
     public String getPassword() {
         return password;
     }
-d}
 
     public void setPassword(String password) {
         this.password = password;
