@@ -15,6 +15,11 @@ public class Main {
                 escenario2();
         }
 
+
+        /*En este metodo se iniciliza lo comun a todos lo
+        * necesario para la ejecucion de los escenarios
+        * se agregan unos productos y usuarios
+        * */
         public static void inicializar1() {
                 productManager = ProductManager.getInstance();
                 userManager = UserManager.getInstance();
