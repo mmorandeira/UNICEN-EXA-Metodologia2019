@@ -15,6 +15,10 @@ public class Main {
                 escenario2();
         }
 
+        /*En este metodo se iniciliza lo comun a todos lo
+         * necesario para la ejecucion de los escenarios
+         * se agregan unos productos y usuarios
+         * */
 
         public static void inicializar1() {
                 productManager = ProductManager.getInstance();
@@ -47,12 +51,7 @@ public class Main {
                 productManager.addProduct(p7);
         }
 
-        /*En este escenario un usuario desea loguarse
-        * como el usuario no estaba registrado, este se registra
-        * y añade unos productos a su acopio, de los cuales algunos
-        * no existen. Luego para comporobar que esto funcione
-        * correctamente se verifican las estadisticas
-        * */
+
         public static void escenario1(){
                 userManager.imprimirUsuarios();
                 userApp.login("sofimangaterra@gmail.com", "123456789"); //Cuenta no existente por lo que no se puede logear
