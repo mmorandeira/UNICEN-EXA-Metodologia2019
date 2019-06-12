@@ -46,6 +46,12 @@ public class Main {
                 productManager.addProduct(p7);
         }
 
+        /*En este escenario un usuario desea loguarse
+        * como el usuario no estaba registrado, este se registra
+        * y añade unos productos a su acopio, de los cuales algunos
+        * no existen. Luego para comporobar que esto funcione
+        * correctamente se verifican las estadisticas
+        * */
         public static void escenario1(){
                 userManager.imprimirUsuarios();
                 userApp.login("sofimangaterra@gmail.com", "123456789"); //Cuenta no existente por lo que no se puede logear
@@ -59,7 +65,7 @@ public class Main {
                 System.out.println(userApp.calcularEstadisticas() + "kg");
         }
         
-        /*En escenario la municipalidad desea vizualizar las
+        /*En este escenario la municipalidad desea vizualizar las
         * estadisticas del barrio "MIRAGE" para esto
         * se crean unos productos y unos vecinos y son registrados los acopios
         * (para esto se usa el metodo inicializar1())
