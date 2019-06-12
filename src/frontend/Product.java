@@ -8,6 +8,10 @@ public class Product {
     private double volumen;
     private String material;
 
+    // En esta clase se definen los parametros que tiene un producto.
+    // Sus instancias  son los productos en si mismo
+    // estos permiten  ingresar valores como
+    // codigo de barra , peso , volumen ,entre otros .
     public Product(String codigoDeBarra, String nombre, double peso, double volumen, String material) {
         this.codigoDeBarra = codigoDeBarra;
         this.nombre = nombre;
