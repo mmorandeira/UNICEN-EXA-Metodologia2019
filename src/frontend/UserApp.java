@@ -4,6 +4,7 @@ import backend.UserManager;
 import util.Pair;
 
 import java.time.LocalDate;
+
 import backend.ProductManager;
 import backend.Mapa;
 import backend.Municipio;
@@ -15,12 +16,13 @@ public class UserApp {
     private Mapa mapa;
     private ProductManager productManager;
     private Municipio municipio;
-/*  En esta clase se encuentra la aplicacion del usuario.
-    esta misma hace de intermediario entre el usuario y el backend
-    peritiendo loguearse, agregar productos al acopio  y aceder a las distintas secciones de la aplicacion.
- */
-    public UserApp(){
-        this.userManager=UserManager.getInstance();
+
+    /*  En esta clase se encuentra la aplicacion del usuario.
+        esta misma hace de intermediario entre el usuario y el backend
+        peritiendo loguearse, agregar productos al acopio  y aceder a las distintas secciones de la aplicacion.
+     */
+    public UserApp() {
+        this.userManager = UserManager.getInstance();
         this.mapa = Mapa.getInstance();
         this.productManager = ProductManager.getInstance();
         this.logeado = false;
@@ -34,7 +36,7 @@ public class UserApp {
      */
     public void login(String mail, String pass) {
         if ((this.userManager.existeUser(mail)) && !this.logeado) {
-            if (this.userManager.validarPassword(mail,pass)) {
+            if (this.userManager.validarPassword(mail, pass)) {
                 this.logeado = true;
                 this.usuario = this.userManager.getUser(mail);
                 this.usuario.addActivity(LocalDate.now());
@@ -82,11 +84,12 @@ public class UserApp {
     public void verAyudaONG() {
         // Hacer simulacion, mensajes con municipio
     }
+
     // agrega productos siempre y cuando este producto este previamente en el sistema
     public void addProduct(String codBarras, Integer cant) {
         if ((this.productManager.existeProducto(codBarras)) && this.logeado) {
             Product p = this.productManager.getProducto(codBarras);
-            Pair<Product, Integer> pAux = new Pair<Product, Integer>(p,cant);
+            Pair<Product, Integer> pAux = new Pair<Product, Integer>(p, cant);
             this.usuario.addAcopio(pAux);
             this.municipio.addAcopio(this.usuario, pAux);
         }
