@@ -70,6 +70,9 @@ public class Main {
             EstadisticaPorBarrio c1 = new EstadisticaPorBarrio("Mirage");
             System.out.println(c1.calcularKilosAcumulado(municipio));
             System.out.println(c1.calcularVolumenAcumulado(municipio));
+            EstadisticaPorMaterial c2 = new EstadisticaPorMaterial("papel");
+            System.out.println(c2.calcularKilosAcumulado(municipio));
+            System.out.println(c2.calcularVolumenAcumulado(municipio));
         }
         
         

@@ -23,7 +23,7 @@ public class EstadisticaPorBarrio implements CalculadoraEstadistica {
                 result += pair.getSecond().getFirst().getPeso() * pair.getSecond().getSecond();
             }
         }
-        return result;
+        return Math.round(result * 1000)/1000.0;
     }
 
     @Override
@@ -35,6 +35,6 @@ public class EstadisticaPorBarrio implements CalculadoraEstadistica {
                 result += pair.getSecond().getFirst().getVolumen() * pair.getSecond().getSecond();
             }
         }
-        return result;
+        return Math.round(result * 1000)/1000.0;
     }
 }
