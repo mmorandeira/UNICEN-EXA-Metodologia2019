@@ -5,9 +5,13 @@ import java.util.HashMap;
 import frontend.User;
 
 public class UserManager {
+    //atributos
     private HashMap<String, User> usuarios;
     static UserManager instance;
 
+    //metodos
+
+    // manejos de usuarios
     private UserManager() {
         this.usuarios = new HashMap<String, User>();
     }
