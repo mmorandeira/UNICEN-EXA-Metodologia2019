@@ -9,13 +9,13 @@ import util.Pair;
 public class EstadisticaPorMaterial implements CalculadoraEstadistica {
 	private String material;
 
-	//  se define el material del cual se desea saber las estadisticas
+	//  Se define el material del cual se desea saber las estadisticas
 	public EstadisticaPorMaterial(String material) {
 		this.material = material;
 	}
 	/*  Implementacion de metricas por kilo de un material.
 		Recorre cada usuario y cada producto, si es del material buscado,
-		suma su peso a el resultado.
+		Suma su peso a el resultado.
 	*/
     @Override
     public double calcularKilosAcumulado(Municipio municipio) {
