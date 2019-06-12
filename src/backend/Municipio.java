@@ -1,5 +1,6 @@
 package backend;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -13,7 +14,7 @@ public class Municipio {
     ProductManager productManager;
     private List<PuntoItinerante> puntoItinerantes;
     private List<String> ong;
-    private List<Pair<String, Date>> cronograma;
+    private List<Pair<String, LocalDate>> cronograma;
     private List<Pair<User, Pair<Product, Integer>>> acopioAcumulado;
     static Municipio instance;
 
@@ -40,7 +41,7 @@ public class Municipio {
         this.puntoItinerantes.add(p);
     }
 
-    public void addCronograma(Pair<String, Date> c) {
+    public void addCronograma(Pair<String, LocalDate> c) {
         this.cronograma.add(c);
     }
 
