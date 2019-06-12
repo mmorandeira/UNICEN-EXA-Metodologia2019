@@ -76,7 +76,7 @@ public class Main {
         * (para esto se usa el metodo inicializar1())
         * se creea una instancia de la clase EstadisticaPorBarrio
         * y se llama al metoodo calcular
-        * */
+         */
         public static void escenario2(){
             //estadisticas de barrio "Mirage"
             EstadisticaPorBarrio c1 = new EstadisticaPorBarrio("Mirage");
