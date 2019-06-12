@@ -11,7 +11,10 @@ public class UserManager {
 
     //metodos
 
-    // manejos de usuarios
+    /* Esta clase permite el manejo de usuarios ,cada usuario es unico
+        por lo cual no se permite mas de una instancia del mismo.
+        Permite validar la existencia de un mail y la pasword correspondiente al mismo.
+    */
     private UserManager() {
         this.usuarios = new HashMap<String, User>();
     }
