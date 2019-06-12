@@ -24,7 +24,7 @@ public class Municipio {
         cronograma = new ArrayList<>();
         acopioAcumulado = new ArrayList<>();
     }
-
+    // dentro del sistema solo se permite una unica instancia de municipio , de no existir se crea una .
     public static Municipio getInstance() {
         if (instance == null)
             instance = new Municipio();
@@ -45,14 +45,14 @@ public class Municipio {
     }
 
     public String getEstadisticas() {
-        return "Estadistica";
+        return "Estadisticas";
     }
-
+    //agrega un producto y la cantidad a el acopio de un usuario
     public void addAcopio(User u, Pair<Product, Integer> p) {
         Pair<User, Pair<Product, Integer>> aux = new Pair<User, Pair<Product, Integer>>(u, p);
         this.acopioAcumulado.add(aux);
     }
-
+    //devuelve el acopio producido por un usuario
     public List<Pair<User, Pair<Product, Integer>>> getAcopioAcumulado(){
         List<Pair<User, Pair<Product, Integer>>> aux = new ArrayList<Pair<User, Pair<Product, Integer>>>();
         aux.addAll(this.acopioAcumulado);
