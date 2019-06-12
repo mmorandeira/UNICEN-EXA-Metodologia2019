@@ -5,8 +5,13 @@ public class PuntoItinerante {
 	private int id;
 	private String direccion;
 	private boolean activo;
+
 	//private Camion c;
-	
+
+	/*  Esta clase permite instanciar puntos intinerantes los cuales pueden o no estar activo
+		Geters y Seters
+	*/
+
 	public PuntoItinerante(int id, String direccion, boolean activo){
 		this.id = id; 
 		this.direccion = direccion;
