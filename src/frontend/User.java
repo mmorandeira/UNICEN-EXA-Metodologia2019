@@ -6,13 +6,17 @@ import java.time.LocalDate;
 import java.util.Vector;
 
 public class User {
-
+    /*
+    En esta clase se definen los parametros nesesarios para instanciar un Usuario
+    El mismo cuenta con una identidad, una ubicacion, un mail y un password.
+    Tambien permite obtener la cantidad de kg de acopio producido y las fechas en las que estubo activo.
+     */
 
     private Vector<Pair<Product, Integer>> coleccionDeAcopio;
     private String nombre;
     private String apellido;
     private String domicilio;
-    private String barrio;//ubicacion?
+    private String barrio;
     private String password;
     private String mail;
     private Vector<LocalDate> activity;
@@ -37,8 +41,8 @@ public class User {
     public void addAcopio(Pair<Product, Integer> acopio) {
         coleccionDeAcopio.add(acopio);
     }
-
-    public double getCantEnPeso() { //devuelve la suma de cantidades en kg
+    //devuelve la suma de cantidades en kg
+    public double getCantEnPeso() {
         double suma = 0;
         for (int i=0; i < coleccionDeAcopio.size(); i++) {
         	suma += (coleccionDeAcopio.elementAt(i).getSecond()* (double)coleccionDeAcopio.elementAt(i).getFirst().getPeso());
