@@ -3,7 +3,7 @@ package backend;
 import util.Pair;
 
 import java.util.Vector;
-
+    // Esta clase contiene un vector de cordenadas
 public class Mapa {
     private  Vector<Pair<Integer,Integer>> mapa;
     private static Mapa instance;
