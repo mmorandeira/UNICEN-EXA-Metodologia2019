@@ -24,7 +24,7 @@ public class Municipio {
         cronograma = new ArrayList<>();
         acopioAcumulado = new ArrayList<>();
     }
-    // dentro del sistema solo se permite una unica instancia de municipio , de no existir se crea una .
+    // dentro del sistema solo se permite una unica instancia de municipio , de no existir se crea una.
     public static Municipio getInstance() {
         if (instance == null)
             instance = new Municipio();
